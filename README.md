@@ -1,6 +1,7 @@
 #  MANUAK DE UTLIZAÇÃO DO SISTEMA/SITE
 ##  CAPITULO 1 - Configuração do git no computador 
-instalar o git
+instalar o git executar
+
 
 <p align="justify">    
     Realize a busca do termo [Instalar GIT] (https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
