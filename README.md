@@ -1,4 +1,4 @@
-#  MANUAK DE UTLIZAÇÃO DO SISTEMA/SITE
+#  MANUAL DE UTLIZAÇÃO DO SISTEMA/SITE
 ##  CAPITULO 1 - Configuração do git no computador 
 instalar o git executar
 
