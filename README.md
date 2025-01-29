@@ -24,7 +24,8 @@ git --version
 
 ```
 git status
-git add index.html or git addgit commit -m "Mensagem do desenvolvedor" ex? "Update file README"
+git add index.html or git add .
+git commit -m "Mensagem do desenvolvedor" ex? "Update file README"
 git push -u origin master on main 
 ```
 
