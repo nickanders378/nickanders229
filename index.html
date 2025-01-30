@@ -1,224 +1,176 @@
-<!DOCTYPE html> 
-<!-- Declaração do tipo de documento HTML5, essencial para que o navegador renderize a página corretamente. -->
-
-<html lang="pt-br"> 
-<!-- Inicia o documento HTML e define o idioma da página como português do Brasil. -->
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <!-- Início da seção de cabeçalho da página, que contém metadados e links externos. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Mídias</title>
     
-    <meta charset="UTF-8"> 
-    <!-- Define a codificação de caracteres da página para UTF-8, que suporta caracteres especiais e acentuação. -->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- Torna a página responsiva, ajustando o layout conforme a largura do dispositivo. -->
-    
-    <title>Catálogo de Mídias</title> 
-    <!-- Define o título da página, que é exibido na aba do navegador. -->
-    
-    <link rel="stylesheet" type="text/css" href="/css/indexnicollas.css"> 
-    <!-- Link para o arquivo CSS externo para estilizar a página (caminho relativo para um arquivo CSS). -->
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
-    <!-- Link para o framework Bootstrap, que fornece estilos prontos para componentes como botões, grids, etc. -->
+    <!-- Estilos externos -->
+    <link rel="stylesheet" type="text/css" href="/css/indexnicollas.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <style>
-        /* Estilos CSS internos que modificam a aparência da página */
-
         body {
-            background-color: #0a0a09; 
-            /* Define a cor de fundo do corpo da página. */
-            color: #fcf1f1; 
-            /* Define a cor do texto na página. */
+            background-color: #0a0a09;
+            color: #fcf1f1;
+            font-family: Arial, sans-serif;
+            margin-bottom: 100px; /* Espaço para o footer */
         }
-
         header {
-            background-color: #0a3563; 
-            /* Define a cor de fundo do cabeçalho. */
-            color: white; 
-            /* Define a cor do texto no cabeçalho. */
-            padding: 20px; 
-            /* Define o espaçamento interno (padding) do cabeçalho. */
-            text-align: center; 
-            /* Centraliza o texto no cabeçalho. */
+            background-color: #0a3563;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
-
         h1 {
-            font-size: 2.5rem; 
-            /* Define o tamanho da fonte do título principal. */
+            font-size: 2.5rem;
         }
-
         h2 {
-            color: #0575ed; 
-            /* Define a cor do título secundário (h2). */
+            color: #0575ed;
         }
-
-        .card-img-top {
-            width: 100%; 
-            /* Ajusta a largura da imagem do cartão para 100% do tamanho do contêiner. */
-            height: 200px; 
-            /* Define a altura da imagem do cartão. */
-            object-fit: cover; 
-            /* Faz a imagem cobrir o espaço disponível sem distorcer a proporção. */
-        }
-
-        .card-body {
-            background-color: #1013a1; 
-            /* Define a cor de fundo da área do corpo do cartão. */
-        }
-
         .grid {
-            display: flex; 
-            /* Define o layout flexível para os cartões. */
-            justify-content: space-around; 
-            /* Distribui os cartões com espaço ao redor. */
-            flex-wrap: wrap; 
-            /* Permite que os cartões se ajustem à largura da tela (quebrem em várias linhas). */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Ajuste para distribuir melhor as imagens */
+            gap: 20px;
+            padding: 20px;
         }
-
         .card {
-            width: 100%; 
-            /* Define a largura dos cartões para 100% do espaço disponível. */
-            max-width: 300px; 
-            /* Define a largura máxima de 300px para os cartões. */
-            margin: 10px; 
-            /* Define a margem ao redor de cada cartão. */
+            width: 100%;
+            max-width: 300px; /* Ajustado para um tamanho mais amplo */
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            background-color: #1a237e;
         }
-
+        .card-img-top {
+            width: 100%;
+            height: 450px; /* Aumentei a altura para esticar mais */
+            object-fit: cover; /* Garantir que as imagens não percam o foco ao esticar */
+        }
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
         footer {
-            background-color: #0b2fb1; 
-            /* Define a cor de fundo do rodapé. */
-            color: rgb(244, 227, 227); 
-            /* Define a cor do texto no rodapé. */
-            padding: 10px; 
-            /* Define o espaçamento interno (padding) do rodapé. */
-            text-align: center; 
-            /* Centraliza o texto no rodapé. */
-            position: fixed; 
-            /* Faz o rodapé fixo na parte inferior da página. */
-            bottom: 0; 
-            /* Posiciona o rodapé na parte inferior da página. */
-            width: 100%; 
-            /* Define que o rodapé ocupa toda a largura da página. */
+            background-color: #0b2fb1;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-
-        .form-section input {
-            width: 100%; 
-            /* Define a largura dos campos de entrada para 100%. */
-            padding: 10px; 
-            /* Define o espaçamento interno dos campos. */
-            margin: 5px 0; 
-            /* Define a margem ao redor dos campos. */
-            border-radius: 4px; 
-            /* Define bordas arredondadas nos campos. */
-            border: 1px solid #090ca7; 
-            /* Define a borda dos campos de entrada. */
+        .form-section {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px; /* Espaço para o footer */
         }
-
+        .form-section input, .form-section button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
         .form-section button {
-            width: 100%; 
-            /* Define a largura do botão para 100%. */
-            padding: 10px; 
-            /* Define o espaçamento interno do botão. */
-            background-color: #2310b0; 
-            /* Define a cor de fundo do botão. */
-            border: none; 
-            /* Remove a borda padrão do botão. */
-            color: rgb(242, 227, 227); 
-            /* Define a cor do texto do botão. */
-            border-radius: 4px; 
-            /* Define bordas arredondadas no botão. */
+            background-color: #0575ed;
+            color: white;
+            cursor: pointer;
         }
-
         .form-section button:hover {
-            background-color: #0eb50e; 
-            /* Muda a cor de fundo do botão quando o mouse passa por cima. */
+            background-color: #0a3563;
         }
     </style>
 </head>
 <body>
-    <!-- Início do corpo da página -->
-    
     <header>
-        <!-- Cabeçalho da página, com título e descrição -->
         <h1>Catálogo de Mídias</h1>
         <p>Explore filmes, músicas e muito mais!</p>
+        
     </header>
 
     <div class="container mt-4">
-        <!-- Container principal que contém as seções de conteúdo da página -->
-
         <section class="intro">
-            <!-- Seção de introdução sobre o catálogo -->
             <h2>Sobre o Catálogo</h2>
-            <p>Descubra uma seleção incrível de mídias...</p>
+            <p>Descubra uma seleção incrível de mídias, desde os melhores filmes até músicas que marcaram época.</p>
         </section>
 
         <section class="category mt-4">
-            <!-- Seção para exibir a lista de filmes -->
-            <h2>Filmes</h2>
+            <h2>Filmes, Músicas e Outras Mídias</h2>
             <div class="grid">
-                <!-- Grid (layout flexível) para exibir cartões de filmes -->
                 <div class="card">
-                    <!-- Cartão de filme individual -->
-                    <img src="imagem-do-filme.jpg" class="card-img-top" alt="Filme 1"> 
-                    <!-- Imagem do filme no topo do cartão -->
+                    <a href="/pages/interestelar.html" target="_blank">
+                        <img src="https://i.ebayimg.com/thumbs/images/g/zu4AAOSw2spbJQ0J/s-l500.jpg" class="card-img-top" alt="Interestelar">
+                    </a>
                     <div class="card-body">
-                        <!-- Corpo do cartão, onde as informações do filme são exibidas -->
                         <h3>Interestelar</h3>
-                        <p>Filme de ficção científica...</p>
+                        <p>Um épico de ficção científica sobre exploração espacial e o tempo.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="category mt-4">
-            <!-- Seção para exibir a lista de músicas -->
-            <h2>Músicas</h2>
-            <div class="grid">
-                <!-- Grid (layout flexível) para exibir cartões de músicas -->
                 <div class="card">
-                    <!-- Cartão de música individual -->
-                    <img src="imagem-da-musica.jpg" class="card-img-top" alt="Música 1">
-                    <!-- Imagem da música no topo do cartão -->
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/d/da/The_Irishman_p%C3%B4ster.png?20200203035559" class="card-img-top" alt="O Irlandês">
                     <div class="card-body">
-                        <!-- Corpo do cartão, onde as informações da música são exibidas -->
+                        <h3>O Irlandês</h3>
+                        <p>Um drama policial dirigido por Martin Scorsese sobre a máfia americana.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a4/29/fc/a429fc9f-1032-3257-4f29-218d3fd51229/842474107140.jpg/1200x1200bb.jpg" class="card-img-top" alt="House of the Rising Sun">
+                    <div class="card-body">
                         <h3>House of the Rising Sun</h3>
-                        <p>Música tradicional americana...</p>
+                        <p>Um clássico do rock lançado pela banda The Animals em 1964.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://a-static.mlcdn.com.br/470x352/racionais-mc-s-sobrevivendo-no-inferno-r-s/saraiva/9213901/e10841ff1041a10a44a1a0003a778d9c.jpeg" class="card-img-top" alt="Jogo da Capadócia">
+                    <div class="card-body">
+                        <h3>Jogo da Capadócia</h3>
+                        <p>Uma das faixas mais marcantes do Racionais MC's, retratando a realidade das periferias.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pE5zlA02UQqiKgYWjJ0K3m-_zMJiCOTWow&s" class="card-img-top" alt="Podcast">
+                    <div class="card-body">
+                        <h3>Joe Rogan Podcast</h3>
+                        <p>Um dos podcasts mais populares do mundo, cobrindo diversos tópicos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BY2I1ZWJmNDUtMzc5OC00YzVmLTliZWItNTczZDQ0YTNiOTZjXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="American Factory">
+                    <div class="card-body">
+                        <h3>American Factory</h3>
+                        <p>Um documentário que aborda o impacto da globalização entre trabalhadores americanos e chineses.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="form-section mt-4">
-            <!-- Seção de formulário de cadastro -->
             <h2>Cadastre-se</h2>
             <form id="cadastro-form">
-                <!-- Formulário de cadastro de usuário -->
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Seu nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-                <label for="filme-favorito">Filme favorito:</label>
-                <input type="text" id="filme-favorito" name="filme-favorito" placeholder="Seu filme favorito" required>
-                <button type="submit">Cadastrar</button>
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" required>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+              <label for="filme-favorito">Filme favorito:</label>
+              <input type="text" id="filme-favorito" name="filme-favorito" placeholder="Seu filme favorito" required>
+              <button type="submit">Cadastrar</button>
             </form>
-            
-            <div id="user-list" class="mt-4">
-                <!-- Lista de usuários cadastrados -->
-                <h3>Usuários Cadastrados:</h3>
-                <ul id="lista-usuarios"></ul>
-            </div>
         </section>
-
     </div>
 
     <footer>
-        <!-- Rodapé da página -->
         <p>Catálogo de Mídias &copy; 2024. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
-    <!-- Link para o arquivo JavaScript que pode ser usado para funcionalidades dinâmicas -->
 </body>
 </html>

@@ -5,65 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interestelar</title>
     <style>
-        body {
-            color: black; /* Cor do texto preta */
-            font-family: Arial, sans-serif; /* Fonte simples */
+        /* Reset básico */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #e0e0e0; /* Cor de fundo cinza claro (escuro) */
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #e0e0e0;
+            color: #333;
             text-align: center;
         }
 
         header {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente para o título */
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
             color: white;
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
         .image-container {
-            text-align: center;
-            margin-top: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
         }
 
         img {
-            max-width: 100%; /* Ajusta a imagem ao tamanho da tela */
-            height: auto; /* Mantém a proporção da imagem */
-            border-radius: 10px; /* Adiciona borda arredondada na imagem */
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .content {
             padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
             text-align: left;
-            max-width: 80%; /* Limita a largura do conteúdo */
-            margin: 0 auto; /* Centraliza o conteúdo */
         }
 
         h2 {
-            color: #4a90e2; /* Cor azul para os subtítulos */
+            color: #4a90e2;
+            font-size: 2rem;
+            margin-bottom: 15px;
         }
 
         p {
-            color: black; /* Cor preta para o parágrafo */
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
             text-align: justify;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Interestelar</h1>
+        <h1>INTERESTELAR</h1>
+        <a href="/index.html" target="_blank">voltar</a>
     </header>
 
     <div class="image-container">
         <img src="https://m.media-amazon.com/images/I/91FhSXlwgjL._AC_SY741_.jpg" alt="Interestelar Movie Poster">
     </div>
 
-    <div class="content">
+    <div class="container">
         <section>
             <h2>Sobre o Filme</h2>
             <p>"Interestelar" (2014), dirigido por Christopher Nolan, é um filme de ficção científica que explora os limites da sobrevivência humana, o amor, e a relação entre tempo e espaço. Com a Terra em colapso devido a desastres ambientais e uma grave escassez de alimentos, um ex-piloto da NASA, Joseph Cooper (interpretado por Matthew McConaughey), é recrutado para liderar uma missão espacial para explorar planetas em outra galáxia, através de um buraco de minhoca próximo a Saturno, que poderia ser a chave para salvar a humanidade.</p>
