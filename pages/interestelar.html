@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interestelar</title>
     <style>
-        /* Reset básico */
         * {
             margin: 0;
             padding: 0;
@@ -14,34 +13,47 @@
 
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #e0e0e0;
-            color: #333;
+            background-color: #222;
+            color: white;
             text-align: center;
         }
 
-        header {
-            padding: 40px 20px;
-            background-color: rgba(0, 0, 0, 0.8);
+        .form-section {
+            background-color: black;
+            padding: 20px;
+            margin: 30px auto;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        .form-section h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #444;
             color: white;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .image-container {
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 0 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
         }
 
         .content {
@@ -63,45 +75,111 @@
             text-align: justify;
         }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
+        .image-container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
 
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>INTERESTELAR</h1>
-        <a href="/index.html" target="_blank">voltar</a>
     </header>
 
     <div class="image-container">
         <img src="https://m.media-amazon.com/images/I/91FhSXlwgjL._AC_SY741_.jpg" alt="Interestelar Movie Poster">
+        <!-- Added new image here -->
+        <img src="images/foto.jpg" alt="Animais incríveis" width="400" height="320">
     </div>
 
-    <div class="container">
-        <section>
-            <h2>Sobre o Filme</h2>
-            <p>"Interestelar" (2014), dirigido por Christopher Nolan, é um filme de ficção científica que explora os limites da sobrevivência humana, o amor, e a relação entre tempo e espaço. Com a Terra em colapso devido a desastres ambientais e uma grave escassez de alimentos, um ex-piloto da NASA, Joseph Cooper (interpretado por Matthew McConaughey), é recrutado para liderar uma missão espacial para explorar planetas em outra galáxia, através de um buraco de minhoca próximo a Saturno, que poderia ser a chave para salvar a humanidade.</p>
+    <div class="content">
+        <h2>Sobre o Filme</h2>
+        <p>"Interestelar" (2014), dirigido por Christopher Nolan, é um filme de ficção científica que explora os limites da sobrevivência humana, o amor e a relação entre tempo e espaço. Com a Terra em colapso devido a desastres ambientais e escassez de alimentos, um ex-piloto da NASA, Joseph Cooper (Matthew McConaughey), é recrutado para liderar uma missão espacial para explorar planetas em outra galáxia e encontrar um novo lar para a humanidade.</p>
+        <p>Durante sua jornada, Cooper e sua equipe enfrentam desafios científicos e emocionais, viajando através de um buraco de minhoca próximo a Saturno. O filme explora temas como gravidade, relatividade do tempo e a conexão humana através do espaço e do tempo.</p>
+        <p>A trilha sonora, composta por Hans Zimmer, e os efeitos visuais realistas tornam "Interestelar" uma obra-prima do cinema moderno.</p>
 
-            <p>A missão envolve viajar através de diferentes planetas localizados em uma região desconhecida do universo, onde as leis da física são desafiadas, e o tempo se comporta de maneira estranha devido à proximidade de um buraco negro gigante. À medida que Cooper e sua equipe enfrentam desafios extremos e emocionais, o filme explora temas como o amor eterno de um pai pela filha, a natureza do tempo e as complexidades da física quântica.</p>
+        <!-- Added audio elements here -->
+        <h2>Ouça o Áudio:</h2>
+        <audio controls src="audio.mp3"></audio>
 
-            <p>Enquanto Cooper lida com suas próprias questões familiares, tentando manter a conexão com sua filha Murphy (interpretada por Jessica Chastain), a missão também se desenrola em uma corrida contra o tempo para encontrar um novo lar para a humanidade, antes que o planeta Terra se torne inabitável. O filme é um mergulho profundo nas questões filosóficas, científicas e emocionais, levando os espectadores a questionar a natureza da nossa existência e os limites do possível.</p>
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
 
-            <p>Com uma direção magistral de Nolan e um elenco de estrelas, "Interestelar" não é apenas uma jornada espacial, mas também uma história humana sobre o que significa ser parte de algo maior do que nós mesmos. A cinematografia impressionante, a trilha sonora com composições de Hans Zimmer, e o enredo profundo fazem de "Interestelar" uma obra-prima da ficção científica moderna.</p>
+        <!-- Added video element here -->
+        <h2>Assista ao Vídeo:</h2>
+        <video width="320" height="420" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+
+    <main>
+        <section class="form-section">
+            <h1>Cadastre-se</h1>
+            <form action="#">
+                <label for="fname">Nome:</label>
+                <input type="text" id="fname" name="fname" placeholder="Seu nome">
+
+                <label for="femail">E-mail:</label>
+                <input type="email" id="femail" name="femail" placeholder="Seu e-mail">
+
+                <label for="ffilme">Qual é o seu Filme Favorito:</label>
+                <input type="text" id="ffilme" name="ffilme" placeholder="Filme Favorito">
+
+                <label for="fsenha">Senha:</label>
+                <input type="password" id="fsenha" name="fsenha">
+
+                <input type="checkbox" id="fmsm" name="fmsm">
+                <label for="fmsm">MSM</label>
+
+                <label for="fobservacoes">Observações:</label>
+                <textarea id="fobservacoes" name="fobservacoes"></textarea>
+
+                <label for="ftel">Telefone:</label>
+                <input type="tel" id="ftel" name="ftel" placeholder="( ) 0000-0000">
+
+                <label for="fbuscar">Buscar:</label>
+                <input type="search" id="fbuscar" name="fbuscar" placeholder="Buscar">
+
+                <label for="femail2">Email:</label>
+                <input type="email" id="femail2" name="femail2" value="email@site.com">
+
+                <label for="furl">Url:</label>
+                <input type="url" id="furl" name="furl" value="http://www.site.com.br" required>
+
+                <label for="fdata">Data de Nascimento:</label>
+                <input type="date" id="fdata" name="fdata">
+
+                <label for="fcadastro">Data de Cadastro:</label>
+                <input type="datetime-local" id="fcadastro" name="fcadastro" value="2025-02-03T10:52">
+
+                <select name="fopcao">
+                    <option>Opção 1.1</option>
+                </select>
+
+                <!-- New fields added here -->
+                <label for="fweek">Semana:</label><br>
+                <input type="week" id="fweek" name="fweek" placeholder=""><br>
+
+                <label for="frange">Volume:</label><br>
+                <input type="range" id="frange" name="frange" placeholder=""><br>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+            <h2>Usuários Cadastrados:</h2>
         </section>
-    </div>
-
+    </main>
 </body>
 </html>

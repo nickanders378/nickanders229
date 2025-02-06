@@ -1,0 +1,81 @@
+/* Resetando margens e padding para garantir que o layout fique consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do body, incluindo a imagem de fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://img.freepik.com/fotos-gratis/ilustracao-de-chuva-na-cidade-futuristica_23-2151406568.jpg?t=st=1738756606~exp=1738760206~hmac=a1975f173a3f4ba3bea5ce41fcb6b17f86ae94aac0ed995219679a5b5a00ced3&w=1380') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    border-bottom: 2px solid #ff00ff; /* Linha neon roxa */
+}
+
+/* Título no cabeçalho com estilo neon */
+header h1 {
+    font-size: 3em;
+    color: #ff00ff; /* Cor neon roxa */
+    text-shadow: 2px 2px 10px rgba(255, 0, 255, 0.8); /* Brilho neon */
+}
+
+/* Parágrafo no cabeçalho com sombra neon */
+header p {
+    font-size: 1.2em;
+    color: #00ffff; /* Cor neon azul */
+    text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Estilo principal da página */
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro para contraste */
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Títulos principais dentro do conteúdo */
+main h2 {
+    font-size: 2em;
+    color: #ff00ff; /* Neon roxo */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(255, 0, 255, 0.8);
+}
+
+/* Parágrafos dentro do conteúdo */
+main p {
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.8;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9); /* Fundo escuro para o rodapé */
+    color: white;
+    border-top: 2px solid #00ffff; /* Linha neon azul */
+}
+
+/* Estilo dos links */
+a {
+    color: #ff00ff;
+    text-decoration: none;
+    text-shadow: 2px 2px 10px rgba(255, 0, 255, 0.8); /* Efeito neon no texto */
+}
+
+a:hover {
+    color: #00ffff;
+    text-shadow: 2px 2px 15px rgba(0, 255, 255, 0.8); /* Efeito hover com neon azul */
+}
