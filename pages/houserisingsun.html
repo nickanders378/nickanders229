@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of the Rising Sun - The Animals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(to bottom, #2a2a2a 50%, #1c1c1c 100%);
+            color: #e0d7a3;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(30, 30, 30, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #d4af37;
+        }
+
+        header a {
+            color: #d4af37;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .form-section {
+            background: rgba(40, 40, 40, 0.95);
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 12px;
+            max-width: 600px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-section h1 {
+            font-size: 2rem;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            background: #333;
+            color: white;
+        }
+
+        input[type="submit"] {
+            background-color: #d4af37;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b38e2e;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        h2 {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .image-container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        audio {
+            margin: 20px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>House of the Rising Sun</h1>
+        <a href="/index.html">Voltar</a>
+    </header>
+
+    <div class="image-container">
+        <img src="https://i.scdn.co/image/ab67616d0000b2733c534611bd3658006378a2d7" alt="House of the Rising Sun - The Animals">
+    </div>
+
+    <div class="content">
+        <h2>Sobre a Música</h2>
+        <p><strong>House of the Rising Sun</strong> é uma tradicional música folk americana, popularizada pela banda britânica <strong>The Animals</strong> em 1964. A canção conta a trágica história de uma vida arruinada em Nova Orleans, conhecida pela sua melodia hipnotizante e a marcante voz de Eric Burdon.</p>
+        <p>A versão de The Animals é considerada um marco no rock e blues, destacando-se pelo arranjo elétrico inovador e solo de órgão eletrizante de Alan Price. Esta música influenciou gerações de músicos e é amplamente reconhecida como uma das maiores canções de todos os tempos.</p>
+        <p>A origem da canção remonta ao início do século XX, quando era uma balada folk tradicional, frequentemente interpretada por artistas de blues e folk americanos. Antes de The Animals, versões notáveis foram gravadas por artistas como Lead Belly e Woody Guthrie.</p>
+        <h2>Impacto Cultural</h2>
+        <p>House of the Rising Sun transcendeu gerações e se tornou um ícone cultural, sendo frequentemente utilizada em trilhas sonoras de filmes e séries. A interpretação dos Animals trouxe um tom sombrio e poderoso, imortalizando a canção no cenário musical.</p>
+        <p>Desde o seu lançamento, a música foi regravada por diversos artistas e continua a ser uma das mais reconhecíveis do repertório clássico do rock.</p>
+        <h2>Curiosidades</h2>
+        <ul>
+            <li>A gravação foi feita em apenas uma tomada, mostrando a habilidade e a química única da banda.</li>
+            <li>A música chegou ao topo das paradas nos Estados Unidos e no Reino Unido, catapultando The Animals para a fama internacional.</li>
+            <li>A versão dos Animals alterou ligeiramente a letra da canção tradicional para se adequar melhor ao vocal de Eric Burdon.</li>
+        </ul>
+
+        <h2>Ouça a Música:</h2>
+        <audio controls src="https://example.com/house_of_the_rising_sun.mp3">Seu navegador não suporta o elemento de áudio.</audio>
+    </div>
+
+    <main>
+        <section class="form-section">
+            <h1>Cadastre-se</h1>
+            <form action="#">
+                <label for="fname">Nome:</label>
+                <input type="text" id="fname" name="fname" placeholder="Seu nome">
+
+                <label for="femail">E-mail:</label>
+                <input type="email" id="femail" name="femail" placeholder="Seu e-mail">
+
+                <label for="fmusica">Qual é a sua Música Favorita:</label>
+                <input type="text" id="fmusica" name="fmusica" placeholder="Música Favorita">
+
+                <label for="fsenha">Senha:</label>
+                <input type="password" id="fsenha" name="fsenha">
+
+                <label for="fdata">Data de Nascimento:</label>
+                <input type="date" id="fdata" name="fdata">
+
+                <label for="frange">Volume:</label>
+                <input type="range" id="frange" name="frange" min="0" max="100">
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

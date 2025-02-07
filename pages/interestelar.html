@@ -18,6 +18,11 @@
             text-align: center;
         }
 
+        header {
+            padding: 20px;
+            background-color: #444;
+        }
+
         .form-section {
             background-color: black;
             padding: 20px;
@@ -87,17 +92,30 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+        .back-btn {
+            background-color: #0575ed;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            background-color: #0a3563;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>INTERESTELAR</h1>
     </header>
 
     <div class="image-container">
         <img src="https://m.media-amazon.com/images/I/91FhSXlwgjL._AC_SY741_.jpg" alt="Interestelar Movie Poster">
-        <!-- Added new image here -->
-        <img src="images/foto.jpg" alt="Animais incríveis" width="400" height="320">
     </div>
 
     <div class="content">
@@ -106,7 +124,6 @@
         <p>Durante sua jornada, Cooper e sua equipe enfrentam desafios científicos e emocionais, viajando através de um buraco de minhoca próximo a Saturno. O filme explora temas como gravidade, relatividade do tempo e a conexão humana através do espaço e do tempo.</p>
         <p>A trilha sonora, composta por Hans Zimmer, e os efeitos visuais realistas tornam "Interestelar" uma obra-prima do cinema moderno.</p>
 
-        <!-- Added audio elements here -->
         <h2>Ouça o Áudio:</h2>
         <audio controls src="audio.mp3"></audio>
 
@@ -116,7 +133,6 @@
             Seu navegador não suporta o elemento de áudio.
         </audio>
 
-        <!-- Added video element here -->
         <h2>Assista ao Vídeo:</h2>
         <video width="320" height="420" controls>
             <source src="movie.mp4" type="video/mp4">
@@ -169,17 +185,19 @@
                     <option>Opção 1.1</option>
                 </select>
 
-                <!-- New fields added here -->
                 <label for="fweek">Semana:</label><br>
-                <input type="week" id="fweek" name="fweek" placeholder=""><br>
+                <input type="week" id="fweek" name="fweek"><br>
 
                 <label for="frange">Volume:</label><br>
-                <input type="range" id="frange" name="frange" placeholder=""><br>
+                <input type="range" id="frange" name="frange"><br>
 
                 <input type="submit" value="Cadastrar">
             </form>
             <h2>Usuários Cadastrados:</h2>
         </section>
     </main>
+
+    <!-- Link de Voltar ao Catálogo -->
+    <a href="file:///C:/Users/Aluno/Documents/Workspace/nickanders229/index.html" class="back-btn">Voltar ao Catálogo de Mídias</a>
 </body>
 </html>

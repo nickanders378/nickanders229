@@ -6,124 +6,135 @@
     <title>CyberBooks</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte futurista Orbitron -->
     <style>
-        /* Estilo do corpo da página */
-        body {
-            background-color: #143947; /* Fundo cinza */
-            color: #333333; /* Texto escuro */
-            font-family: 'Roboto', sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            box-sizing: border-box;
         }
-
-        /* Imagem da frente */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #143947;
+            color: #ffffff;
+            line-height: 1.6;
+        }
         header {
-            background: url('https://i.pinimg.com/1200x/8f/8b/79/8f8b7928a112cfc2111bee60b9f1692a.jpg') no-repeat center center; 
-            background-size: 60% 66%; /* Resolução ajustável 0000x0000 */
-            height: 100vh; /* A imagem ocupa toda a altura da tela */
-            color: white; /* Cor do texto na frente */
+            background: url('https://i.pinimg.com/1200x/8f/8b/79/8f8b7928a112cfc2111bee60b9f1692a.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
             padding: 20px;
-            background-position: center;
+            position: relative;
         }
-
-        /* Título "CyberBooks" no canto superior esquerdo */
         header h1 {
-            font-family: 'Orbitron', sans-serif; /* Fonte futurista */
-            font-size: 5em; /* Aumentei o tamanho da fonte */
-            color: #b45022; /* Vermelho escuro */
+            font-family: 'Orbitron', sans-serif;
+            font-size: 5em;
+            color: #b45022;
             position: absolute;
-            top: 9px;
-            left: 20px;
-            margin: 0;
-            text-shadow: none; /* Sem sombra */
+            top: 20px;
+            left: 30px;
         }
-
-        /* Subtítulo abaixo do título */
         header p {
-            font-family: 'Poppins', sans-serif; /* Fonte moderna e elegante */
+            font-family: 'Poppins', sans-serif;
             font-size: 1.5em;
-            color: #afbdd6; /* Vermelho escuro */
+            color: #afbdd6;
             position: absolute;
-            top: 120px; /* Ajuste a distância do topo para que o subtítulo fique abaixo do título */
-            left: 20px;
-            margin: 0;
-            text-shadow: none; /* Sem sombra */
-            font-weight: 700; /* Negrito */
+            top: 120px;
+            left: 30px;
+            font-weight: 700;
         }
-
         main {
-            background-color: #344131; /* Fundo cinza */
+            background-color: #344131;
             padding: 50px 20px;
             display: flex;
-            flex-direction: row; /* Exibe os itens na mesma linha */
-            justify-content: flex-start; /* Alinha o conteúdo no topo */
-            align-items: flex-start; /* Alinha o conteúdo à esquerda */
-            height: calc(100vh - 150px); /* Ajuste para ocupar uma parte da tela */
-            gap: 30px; /* Espaçamento entre o conteúdo de texto e a imagem */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
         }
-
-        /* Título do conteúdo */
-        h2 {
-            font-size: 2.5em;
-            color: #ffffff; /* Vermelho escuro */
-            text-align: left; /* Alinha o título à esquerda */
-            margin-bottom: 20px;
-        }
-
-        /* Descrição do site */
         .site-description {
             font-size: 1.2em;
-            color: #b2cfae; /* Texto escuro */
-            margin-bottom: 30px;
-            text-align: left; /* Alinha o texto à esquerda */
-            max-width: 800px; /* Limita a largura para uma boa leitura */
+            color: #73a66c;
+            max-width: 800px;
+            text-align: justify;
         }
-
-        /* Estilo da imagem ao lado do conteúdo */
         .site-image {
-            flex: 1; /* A imagem ocupa o restante do espaço */
-            max-width: 50%; /* A imagem não ultrapassa a largura disponível */
-            height: auto; /* Mantém a proporção da imagem */
-            border-radius: 10%; /* Bordas arredondadas */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar a imagem */
+            max-width: 50%;
+            height: auto;
+            border-radius: 10%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            align-self: center;
         }
-
-        /* Rodapé */
+        .book-info {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .book-info h2 {
+            font-size: 2em;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        .book-info img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .book-info p {
+            font-size: 1.2em;
+            color: #ffffff;
+            margin-top: 15px;
+        }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #143947; /* Fundo cinza */
-            color: #ffffff; /* Texto branco */
+            background-color: #b45022;
+            color: #ffffff;
         }
-
         footer p {
             font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <!-- Imagem da frente -->
     <header>
         <h1>CyberBooks</h1>
         <p>Bem-vindo ao site sobre livros da cultura Cyberpunk</p>
     </header>
 
-    <!-- Conteúdo principal -->
     <main>
-        <div>
+        <div class="content">
             <h2>Sobre o Site</h2>
             <div class="site-description">
-                <p>O CyberBooks é um site dedicado a compartilhar e celebrar os livros mais marcantes da cultura Cyberpunk. Aqui, você encontrará histórias que exploram futuros distópicos, grandes avanços tecnológicos, e como esses elementos moldam a sociedade. Este espaço foi criado para os fãs do gênero e para aqueles que buscam entender mais sobre essa fascinante visão de futuro.</p>
-                <p>Nosso objetivo é reunir uma vasta gama de títulos que abordam o impacto da tecnologia, inteligência artificial, e ciberespaço na vida humana. O site não apenas compartilha livros de autores renomados, mas também oferece análises e resenhas detalhadas para ajudar os leitores a mergulharem mais fundo nesse universo.</p>
-                <p>A cada mês, novos livros e resenhas serão adicionados, abrangendo desde os clássicos até as mais recentes publicações, permitindo que todos, desde iniciantes até fãs de longa data, encontrem algo para explorar.</p>
-                <p>O CyberBooks também serve como um ponto de encontro para discussões sobre os temas abordados nos livros, oferecendo um espaço interativo para os leitores compartilharem suas impressões e teorias sobre o futuro cibernético que está sendo moldado na literatura.</p>
+                <p>O CyberBooks é um site dedicado a compartilhar e celebrar os livros mais marcantes da cultura Cyberpunk. Aqui, você encontrará histórias que exploram futuros distópicos, grandes avanços tecnológicos, e como esses elementos moldam a sociedade.</p>
+                <p>Nosso objetivo é reunir uma vasta gama de títulos que abordam o impacto da tecnologia, inteligência artificial, e ciberespaço na vida humana. O site oferece análises detalhadas para ajudar os leitores a mergulharem mais fundo nesse universo.</p>
             </div>
+            <img class="site-image" src="https://i.pinimg.com/1200x/2d/a4/3e/2da43e4f6db79e737f6db05009fcaddb.jpg" alt="Imagem representativa do Cyberpunk">
         </div>
-        <!-- Imagem à direita -->
-        <img class="site-image" src="https://i.pinimg.com/1200x/2d/a4/3e/2da43e4f6db79e737f6db05009fcaddb.jpg" alt="Imagem representativa do Cyberpunk">
     </main>
 
-    <!-- Rodapé -->
+    <div class="book-info">
+        <h2>Cyberpunk: Envisioning Possible Futures Through Cinema</h2>
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQEOmTnglwmjy2nImf7KbP3O4MZQLbQ5nG2KSAhdTkKcXmACd9YHQ0NEuBUSb64r1udW6YsZvy4SOU1ksQJ0QvIugi0IORF_5fm7I5eGhRGQsIMqb_U-c3LEg" alt="Cyberpunk Cinema">
+        <p>Este livro explora as possíveis representações do futuro através do cinema Cyberpunk.</p>
+    </div>
+
+    <div class="book-info">
+        <h2>Liam Wong TO:KY:OO</h2>
+        <img src="https://static.wixstatic.com/media/35ce1c_0d59c97d86214aa4ade2fa4a9a47015f~mv2.jpg" alt="Liam Wong" style="max-width: 45%; height: 600px; width: 400px; border-radius: 5%;">
+        <p>Uma coleção de fotos e artes incríveis que capturam a essência do cyberpunk moderno.</p>
+    </div>
+
+    <div class="book-info">
+        <h2>Neotastic Cyberpunk</h2>
+        <img src="https://img.travessa.com.br/livro/GR/35/35b5800f-21d8-4dc0-b570-280a6e2712ca.jpg" alt="Neotastic">
+        <p>Neotastic é uma visão moderna e vibrante do movimento cyberpunk.</p>
+    </div>
+
+    <div class="book-info">
+        <h2>No Coincidence Cyberpunk 2077</h2>
+        <img src="https://m.media-amazon.com/images/I/91ey+Uyar4L._SY466_.jpg" alt="No Coincidence">
+        <p>Este livro analisa o impacto do jogo na cultura pop, explorando os aspectos filosóficos de Cyberpunk 2077.</p>
+    </div>
+
     <footer>
         <p>&copy; 2025 CyberBooks - Todos os direitos reservados</p>
     </footer>

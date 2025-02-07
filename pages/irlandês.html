@@ -63,6 +63,35 @@
             text-align: justify;
         }
 
+        .form-section {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-section input, .form-section button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .form-section button {
+            background-color: #0575ed;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-section button:hover {
+            background-color: #0a3563;
+        }
+
         /* Responsividade */
         @media (max-width: 768px) {
             h1 {
@@ -77,13 +106,26 @@
                 font-size: 1rem;
             }
         }
+
+        .back-btn {
+            background-color: #0575ed;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            background-color: #0a3563;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>O IRLANDÊS</h1>
-        <a href="/index.html" target="_blank">voltar</a>
     </header>
 
     <div class="image-container">
@@ -101,6 +143,26 @@
 
             <p>A fotografia, a trilha sonora e os efeitos visuais (incluindo o uso de tecnologia de rejuvenescimento digital para os atores) contribuem para a imersão do espectador nessa jornada emocional e histórica. "O Irlandês" é uma reflexão poderosa sobre o legado de uma vida e as consequências das escolhas que fazemos.</p>
         </section>
+
+        <!-- Formulário de cadastro -->
+        <section class="form-section">
+            <h2>Cadastre-se para mais informações</h2>
+            <form id="cadastro-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="filme-favorito">Filme favorito:</label>
+                <input type="text" id="filme-favorito" name="filme-favorito" placeholder="Seu filme favorito" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <!-- Link de Voltar ao Catálogo -->
+        <a href="file:///C:/Users/Aluno/Documents/Workspace/nickanders229/index.html" class="back-btn">Voltar ao Catálogo de Mídias</a>
     </div>
 
 </body>

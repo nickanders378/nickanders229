@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast do Joe Rogan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #212121 50%, #333333 100%); /* Preto e cinza escuro */
+            color: #f4f4f4;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 20px;
+            background: #f39c12; /* Amarelo escuro */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ecf0f1; /* Cor clara para o título */
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        h2 {
+            color: #f39c12; /* Amarelo para os subtítulos */
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .image-container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        video {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+
+        .form-section {
+            background: rgba(40, 40, 40, 0.95);
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 12px;
+            max-width: 600px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-section h1 {
+            font-size: 2rem;
+            color: #ecf0f1;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #ecf0f1;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            background: #34495e;
+            color: white;
+        }
+
+        input[type="submit"] {
+            background-color: #f39c12; /* Amarelo escuro para o botão */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e67e22; /* Amarelo mais claro no hover */
+        }
+
+        .catalogo-button {
+            padding: 15px 30px;
+            background-color: #e67e22;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .catalogo-button:hover {
+            background-color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Podcast do Joe Rogan</h1>
+    </header>
+
+    <div class="image-container">
+        <img src="https://images.squarespace-cdn.com/content/v1/587aec812994ca23948fd074/b9f7c96f-39b0-46d6-90f1-4fb38212fd83/L1020217.jpg" alt="Joe Rogan Podcast">
+    </div>
+
+    <div class="content">
+        <h2>Sobre o Podcast</h2>
+        <p><strong>The Joe Rogan Experience</strong> é um podcast de entrevistas criado e apresentado por Joe Rogan. O podcast se tornou um dos mais populares do mundo, abordando uma grande variedade de tópicos, desde comédia até ciência, política e cultura pop. Rogan frequentemente recebe convidados, incluindo comediantes, especialistas, artistas e outros influenciadores.</p>
+        
+        <h2>Principais Tópicos</h2>
+        <p>O podcast é conhecido por suas conversas profundas e descontraídas sobre temas como filosofia, saúde, política e tecnologia. Com a liberdade de longo formato, Joe Rogan se destaca por promover discussões sem censura, permitindo que os ouvintes explorem diferentes perspectivas.</p>
+        
+        <h2>Impacto Cultural</h2>
+        <p>Com milhões de downloads por episódio, o podcast tem um impacto significativo na cultura digital. Rogan é conhecido por criar um espaço onde ideias são debatidas abertamente, e seu podcast se tornou uma plataforma para aqueles que buscam uma análise mais abrangente de assuntos contemporâneos.</p>
+        
+        <h2>Assista ao Episódio:</h2>
+        <video controls>
+            <source src="https://example.com/joe_rogan_episode.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <button class="catalogo-button" onclick="window.location.href='https://example.com/catalogo'">Catálogo de Mídias</button>
+    </div>
+
+    <main>
+        <section class="form-section">
+            <h1>Cadastre-se</h1>
+            <form action="#">
+                <label for="fname">Nome:</label>
+                <input type="text" id="fname" name="fname" placeholder="Seu nome">
+
+                <label for="femail">E-mail:</label>
+                <input type="email" id="femail" name="femail" placeholder="Seu e-mail">
+
+                <label for="fdocumentario">Qual é o seu Podcast Favorito:</label>
+                <input type="text" id="fdocumentario" name="fdocumentario" placeholder="Podcast Favorito">
+
+                <label for="fsenha">Senha:</label>
+                <input type="password" id="fsenha" name="fsenha">
+
+                <label for="fdata">Data de Nascimento:</label>
+                <input type="date" id="fdata" name="fdata">
+
+                <label for="ftel">Telefone:</label>
+                <input type="tel" id="ftel" name="ftel" placeholder="(00) 00000-0000">
+
+                <label for="furl">Site Favorito:</label>
+                <input type="url" id="furl" name="furl" placeholder="https://www.seusitefavorito.com">
+
+                <label for="fobservacoes">Observações:</label>
+                <textarea id="fobservacoes" name="fobservacoes" placeholder="Deixe suas observações"></textarea>
+
+                <label for="frange">Volume:</label>
+                <input type="range" id="frange" name="frange" min="0" max="100">
+
+                <label for="fhorario">Horário de Preferência:</label>
+                <input type="time" id="fhorario" name="fhorario">
+
+                <label for="fsemana">Semana Preferida:</label>
+                <input type="week" id="fsemana" name="fsemana">
+
+                <label for="fmes">Mês de Interesse:</label>
+                <input type="month" id="fmes" name="fmes">
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

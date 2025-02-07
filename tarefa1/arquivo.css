@@ -5,15 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral do body, incluindo a imagem de fundo */
-body {
-    font-family: 'Arial', sans-serif;
-    background: url('https://img.freepik.com/fotos-gratis/ilustracao-de-chuva-na-cidade-futuristica_23-2151406568.jpg?t=st=1738756606~exp=1738760206~hmac=a1975f173a3f4ba3bea5ce41fcb6b17f86ae94aac0ed995219679a5b5a00ced3&w=1380') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    line-height: 1.6;
-}
-
 /* Estilizando o cabeçalho */
 header {
     text-align: center;
